@@ -1,0 +1,78 @@
+﻿@model Sistema_Aduanero.Models.Clientes
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Provincia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Municipio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Calle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Calle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sector)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contraseña)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contraseña)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

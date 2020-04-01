@@ -1,0 +1,59 @@
+﻿@model Sistema_Aduanero.Models.Pedidos
+
+@{
+    ViewData["Title"] = "Exportacion";
+}
+
+<h2>Exportacion</h2>
+
+<h4>Pedidos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Exportacion">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Tipo de Pedido</label>
+                <input asp-for="TipoPedido" class="form-control" />
+                <span asp-validation-for="TipoPedido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Tipo de Mercancia</label>
+                <input asp-for="TipoMercancia" class="form-control" />
+                <span asp-validation-for="TipoMercancia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cantidad" class="control-label"></label>
+                <input asp-for="Cantidad" class="form-control" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripción" class="control-label"></label>
+                <input asp-for="Descripción" class="form-control" />
+                <span asp-validation-for="Descripción" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estatus" class="control-label"></label>
+                <input asp-for="Estatus" class="form-control" />
+                <span asp-validation-for="Estatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClienteIdFk" class="control-label"></label>
+                <select asp-for="ClienteIdFk" class ="form-control" asp-items="ViewBag.ClienteIdFk"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

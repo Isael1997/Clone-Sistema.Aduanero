@@ -1,0 +1,104 @@
+﻿@model Sistema_Aduanero.Models.Clientes
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row contedor_titulos_login_y_registro">
+    <div class="col-md-6">
+        <h2 class="">Login</h2>
+    </div>
+
+</div>
+<div class="row">
+    <form asp-action="LoginConfirm" class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <label for="correo">Usuario:</label>
+                
+
+                <input asp-for="Usuario" class="form-control" />
+                <span asp-validation-for="Usuario" class="text-danger"></span>
+            </div>
+            <div class="col-md-12">
+                <label for="pass">Contraseña:</label>
+                
+
+                <input asp-for="Contraseña" class="form-control" />
+                <span asp-validation-for="Contraseña" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row formulario_login">
+            <div class="col-md-12">
+                <button type="submit" value="LoginConfirm" class="btn btn-success btn-block">Login</button>
+
+            </div>
+            <div class="col-md-12">
+                <button type="submit" value="LoginConfirm" class="btn btn-success btn-block">Nuevo Registro</button
+            </div>
+        </div>
+        <div class="row">
+            <br /><br />
+            <div class="col-md-12 col-md-offset-4">
+                <a href="#" class="text-danger">Olvide mi contraseña</a>
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <!--
+    
+    <form action="" method="" class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="apellidos">Apellido(s):</label>
+                <input type="text" name="apellidos" id="" class="form-control" placeholder="Duarte y Diez">
+            </div>
+            <div class="col-md-6">
+                <label for="Nombres">Nombre(s)</label>
+                <input type="text" name="Nombres" id="" class="form-control" placeholder="Juan Pablo">
+            </div>
+            <div class="col-md-12">
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="" class="form-control" placeholder="latrinitariard@rd.com">
+            </div>
+            <div class="col-md-12">
+                <label for="correo_repetido">Repetir Correo:</label>
+                <input type="email" name="correo_repetido" id="" class="form-control" placeholder="latrinitariard@rd.com">
+            </div>
+            <div class="col-md-12">
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="" class="form-control" placeholder="letras_y_numeros19">
+            </div>
+            <div class="col-md-12">
+                <label for="pass_repetido">Repetir Contraseña:</label>
+                <input type="email" name="pass_repetido" id="" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-6">
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia" id="" class="form-control" placeholder="Provicia">
+            </div>
+            <div class="col-md-6">
+                <label for="municipio">Municipio</label>
+                <input type="text" name="municipio" id="" class="form-control" placeholder="minicipio">
+            </div>
+            <div class="col-md-6">
+                <label for="calle">Calle:</label>
+                <input type="text" name="calle" id="" class="form-control" placeholder="C/4ta jacinto de los santos">
+            </div>
+            <div class="col-md-6">
+                <label for="sector">Sector:</label>
+                <input type="text" name="sector" id="" class="form-control" placeholder="los mameyes">
+            </div>
+            <div class="col-md-12 btn_guardar_nuevo_registro">
+                <button type="submit" class="btn btn-success btn-block">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Guardar datos
+                </button>
+            </div>
+        </div>
+    </form>
+    -->
+
+</div>
